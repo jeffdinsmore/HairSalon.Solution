@@ -1,12 +1,12 @@
-# _Application Name_
+# _Eau Claire's Hair Salon Database_
 
-#### _{Brief descrition on what application does}, {Date}_
+#### _This website will allow Eau Claire to enter info of his emloyees and clients and save them in a database, 10/09/2020_
 
 #### By _Jeff Dinsmore_
 
 ## Description
 
-_{Detailed description on what the application does.}_
+_Eau Claire's Hair Salon Database is C#/CSHTML website that allows Eau Claire to enter specific info and hire date for his hair stylists (employees). He can then add customers that are attached to his stylists with info on his customers._
 
 ## Setup/Installation Requirements
 
