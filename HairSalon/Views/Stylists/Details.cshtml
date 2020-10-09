@@ -4,9 +4,13 @@
 }
 @model HairSalon.Models.Stylist
 
-<h2>@Html.DisplayFor(model => model.Name)</h2>
+<h4>Stylist: @Html.DisplayFor(model => model.Name)</h4>
+<h4>Phone Number: @Html.DisplayFor(model => model.PhoneNumber)</h4>
+<h4>Expertise: @Html.DisplayFor(model => model.ExpertiseNotes)</h4>
+<h4><strong>Hire Date:</strong> @Html.DisplayFor(model => model.HireDate)</h4>
+
 <hr />
-<h3>Clients:</h3>
+<h3>Clients for @Html.DisplayFor(model => model.Name):</h3>
 <ul>
 @if (@Model.Clients.Count == 0)
 {
@@ -18,6 +22,5 @@
 }
 </ul>
 <br>
-<p>@Html.ActionLink("Back To stylists", "Index", null, null, new { @class = "btn btn-info btn-sm" })</p>
-<p>@Html.ActionLink("Edit stylist", "Edit", null, new { id = Model.StylistId}, new { @class = "btn btn-info btn-sm" }) </p>
-<p>@Html.ActionLink("Delete stylist", "Delete", null, new { id = Model.StylistId}, new { @class = "btn btn-info btn-sm" })</p>
+<p>@Html.ActionLink("Edit Stylist", "Edit", null, new { id = Model.StylistId}, new { @class = "btn btn-success btn-sm" }) </p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", null, new { id = Model.StylistId}, new { @class = "btn btn-danger btn-sm" })</p>

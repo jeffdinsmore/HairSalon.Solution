@@ -8,10 +8,24 @@
 @using (Html.BeginForm())
 {
     @Html.HiddenFor(model => model.StylistId)
-    @Html.LabelFor(model => model.Name)
+
+    @Html.LabelFor(model => model.Name, "Full Name:")
     @Html.TextBoxFor(model => model.Name, 
     new {@required="required"});
-    <input type="submit" value="Save" class="btn btn-info btn-sm"/>
+    <br>
+    @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
+    @Html.TextBoxFor(model => model.PhoneNumber, 
+    new {@required="required"});
+    <br>
+    @Html.LabelFor(model => model.ExpertiseNotes, "Expertise:")
+    @Html.TextBoxFor(model => model.ExpertiseNotes, 
+    new {@required="required"});
+    <br>
+    @Html.LabelFor(model => model.HireDate, "Hire Date:")
+    @Html.TextBoxFor(model => model.HireDate, 
+    new {@required="required"});
+    <br><br>
+    <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
 }
 <br>
-<p>@Html.ActionLink("Back to stylists", "Index")</p>
+<p>@Html.ActionLink("Back To stylists", "Index", null, null, new { @class = "btn btn-success btn-sm" })</p>

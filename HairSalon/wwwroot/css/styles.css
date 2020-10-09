@@ -4,6 +4,9 @@ img {
   border: 10px solid gray;
   border-radius: 10px;
 }
+li {
+  list-style-type: none;
+}
 div#header {
   height: 70px;
   background-color: rgb(0, 143, 100);
@@ -96,8 +99,8 @@ li#footerLi {
 #ExpertiseNotes {
   margin: 5px 5px 5px 8px;
 }
-#DaysOff {
-  margin: 5px 5px 5px 13px;
+#HireDate {
+  margin: 5px 5px 5px 10px;
 }
 #StylistId {
   margin: 5px 5px 5px 33px;
