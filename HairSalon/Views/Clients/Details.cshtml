@@ -6,11 +6,23 @@
 
 <h2>Client Info</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
-<h4>By: @Html.DisplayFor(model => model.PhoneNumber)</h4>
-<h4>Client: @Html.DisplayFor(model => model.Address)</h4>
-<h4>Star Rating: @Html.DisplayFor(model => model.Email)</h4>
-<h4>Star Rating: @Html.DisplayFor(model => model.StylingNotes)</h4>
+<table class="tableClient">
+  <tr>
+    <th class="name">@Html.DisplayNameFor(model => model.Name)</th>
+    <th class="phone">Phone Number</th>
+    <th class="address">Mailing Address</th>
+    <th class="email">Email Address</th>
+    <th class="styling">Styling Notes</th>
+  </tr>
+  <tr>
+    <td>@Html.DisplayFor(model => model.Name)</td>
+    <td>@Html.DisplayFor(model => model.PhoneNumber)</td>
+    <td>@Html.DisplayFor(model => model.Address)</td>
+    <td>@Html.DisplayFor(model => model.Email)</td>
+    <td>@Html.DisplayFor(model => model.StylingNotes)</td>
+  </tr>
+</table>
+
 <br>
 <p>@Html.ActionLink("Back to client list", "Index", null, null, new { @class = "btn btn-success btn-sm" })</p>
 <p>@Html.ActionLink("Edit client success", "Edit", null, new { id = Model.ClientId }, new { @class = "btn btn-success btn-sm"})</p>

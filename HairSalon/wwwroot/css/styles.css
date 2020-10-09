@@ -82,28 +82,47 @@ li#footerLi {
   margin: 5px;
 }
 #PhoneNumber {
-  margin: 5px;
+  margin: 5px 5px 5px 17px;
 }
 #Address {
-  margin: 5px;
+  margin: 5px 5px 5px 15.3px;
 }
 #Email {
-  margin: 5px;
+  margin: 5px 5px 5px 33px;
 }
 #StylingNotes {
-  margin: 5px;
+  margin: 5px 5px 5px 24px;
 }
 #ExpertiseNotes {
-  margin: 5px;
+  margin: 5px 5px 5px 8px;
 }
 #DaysOff {
-  margin: 5px;
+  margin: 5px 5px 5px 13px;
 }
 #StylistId {
-  margin: 5px;
+  margin: 5px 5px 5px 33px;
+  height: 30px;
 }
 #ClientId {
   margin: 5px;
+}
+.tableClient {
+  width: 100%
+}
+th.name {
+  width: 14%;
+}
+th.phone {
+  width: 12%;
+}
+th.address {
+  width: 28%;
+}
+th.email {
+  width: 20%;
+}
+th.styling {
+  width: 26%
 }
 
 

@@ -7,23 +7,23 @@
 @using (Html.BeginForm())
 {
   <h4>Enter client's name:</h4>
-  @Html.LabelFor(model => model.Name)
+  @Html.LabelFor(model => model.Name, "Full Name:")
   @Html.TextBoxFor(model => model.Name, 
   new {@required="required"})
   <br>
-  @Html.LabelFor(model => model.PhoneNumber)
+  @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
   @Html.TextBoxFor(model => model.PhoneNumber, 
   new {@required="required"})  
   <br>
-  @Html.LabelFor(model => model.Address)
+  @Html.LabelFor(model => model.Address, "Address:")
   @Html.TextBoxFor(model => model.Address, 
   new {@required="required"})  
   <br>
-  @Html.LabelFor(model => model.Email)
+  @Html.LabelFor(model => model.Email, "Email:")
   @Html.TextBoxFor(model => model.Email, 
   new {@required="required"})
   <br>
-  @Html.LabelFor(model => model.StylingNotes)
+  @Html.LabelFor(model => model.StylingNotes, "Styling:")
   @Html.TextBoxFor(model => model.StylingNotes, 
   new {@required="required"})
   <br>
