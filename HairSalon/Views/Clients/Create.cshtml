@@ -10,27 +10,28 @@
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name, 
   new {@required="required"})
-  <h4>What stylist does this client go to?</h4>
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId", null, "Please Select", htmlAttributes: new{required = "Please select a stylist"})
-  <h4>Client's phone number:</h4>
+  <br>
   @Html.LabelFor(model => model.PhoneNumber)
   @Html.TextBoxFor(model => model.PhoneNumber, 
   new {@required="required"})  
-  <h4>Client's address:</h4>
+  <br>
   @Html.LabelFor(model => model.Address)
   @Html.TextBoxFor(model => model.Address, 
   new {@required="required"})  
-  <h4>Client's email address:</h4>
+  <br>
   @Html.LabelFor(model => model.Email)
   @Html.TextBoxFor(model => model.Email, 
   new {@required="required"})
-  <h4>Styling notes for this client:</h4>
+  <br>
   @Html.LabelFor(model => model.StylingNotes)
   @Html.TextBoxFor(model => model.StylingNotes, 
   new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId", null, "Please Select", htmlAttributes: new{required = "Please select a stylist"})
+  <br><br>
 
   <input type="submit" value="Add Client" class="btn btn-success btn-sm"/>
 }
 <br>
-<p>@Html.ActionLink("Show all Clients", "Index", null, null, new { @class = "btn btn-success btn-sm" })</p>
+<p>@Html.ActionLink("Show Client List", "Index", null, null, new { @class = "btn btn-success btn-sm" })</p>

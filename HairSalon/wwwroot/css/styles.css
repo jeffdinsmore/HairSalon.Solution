@@ -57,7 +57,7 @@ div#footer {
   bottom:0px;
   left:0px;
   width:100%;
-  background-color: rgb(0, 107, 75);
+  background-color: rgb(0, 112, 79);
   padding:10px;
   height: 60px;
 }
@@ -78,6 +78,33 @@ li#footerLi {
   margin-left: 11%;
 }
 
+#Name {
+  margin: 5px;
+}
+#PhoneNumber {
+  margin: 5px;
+}
+#Address {
+  margin: 5px;
+}
+#Email {
+  margin: 5px;
+}
+#StylingNotes {
+  margin: 5px;
+}
+#ExpertiseNotes {
+  margin: 5px;
+}
+#DaysOff {
+  margin: 5px;
+}
+#StylistId {
+  margin: 5px;
+}
+#ClientId {
+  margin: 5px;
+}
 
 
 /*--- Media Queries ---*/

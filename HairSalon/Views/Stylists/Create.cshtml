@@ -5,34 +5,28 @@
 }
 
 <h4>Add a hair stylist</h4>
+<br>
 @using (Html.BeginForm())
 {
-  <h4>Enter the stylist's Name</h4>
-  <div class="row">
-    <div class="col-md-3">
-      @Html.LabelFor(model => model.Name, "Name")
-      <br>
-      @Html.LabelFor(model => model.PhoneNumber, "Phone Number")
-      <br>
-      @Html.LabelFor(model => model.ExpertiseNotes, "Expertise Notes")
-      <br>
-      @Html.LabelFor(model => model.DaysOff, "Stylists Days Off")
-    </div>
-    <div class="col-md-6">
-      @Html.TextBoxFor(model => model.Name, 
-      new {@required="required"})
-      <br>
-      @Html.TextBoxFor(model => model.PhoneNumber, 
-      new {@required="required"})
-      <br>
-      @Html.TextBoxFor(model => model.ExpertiseNotes, 
-      new {@required="required"})
-      <br>
-      @Html.TextBoxFor(model => model.DaysOff, 
-      new {@required="required"})
-    </div>
-  </div>
+  <h5>Enter the stylist's information below:</h5>
+    @Html.LabelFor(model => model.Name, "Name")
+    @Html.TextBoxFor(model => model.Name, 
+    new {@required="required"})
+    <br>
+    @Html.LabelFor(model => model.PhoneNumber, "Phone Number")
+    @Html.TextBoxFor(model => model.PhoneNumber, 
+    new {@required="required"})
+    <br>
+    @Html.LabelFor(model => model.ExpertiseNotes, "Expertise Notes")
+    @Html.TextBoxFor(model => model.ExpertiseNotes, 
+    new {@required="required"})
+    <br>
+    @Html.LabelFor(model => model.DaysOff, "Stylists Days Off")
+    @Html.TextBoxFor(model => model.DaysOff, 
+    new {@required="required"})
+    <br><br>
     <input type="submit" value="Add new stylist" class="btn btn-success btn-sm"/>
+    <br>
 }
 <br>
 <p>@Html.ActionLink("Show all stylists", "Index", null, null, new { @class = "btn btn-success btn-sm" })
