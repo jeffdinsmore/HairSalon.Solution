@@ -3,7 +3,8 @@ namespace HairSalon.Models
   public class Client
   {
 
-    // properties, methods, etc. will go here.
+    public int ClientId { get; set; }
+    public int ClientId { get; set; }
 
   }
 }

@@ -1,14 +1,19 @@
 using Microsoft.AspNetCore.Mvc;
+using HairSalon.Models;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace HairSalon.Controllers
 {
   public class ClientsController : Controller
   {
-
-    [HttpGet("/")]
-    public ActionResult Index()
+    Private class ClientsController : Controller
     {
-      return View();
+      private readonly HairSalonContext _db;
+
     }
+
   }
 }
