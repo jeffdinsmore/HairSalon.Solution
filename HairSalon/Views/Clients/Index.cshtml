@@ -3,7 +3,12 @@
   Layout = "_Layout";
 }
 @model List<HairSalon.Models.Client>;
-
+@* @using (Html.BeginForm())
+{
+  @Html.Label("Filter Clients by Name")
+  @Html.TextBox("Name")
+  <input type="submit" value="Search" class="btn btn-info btn-sm"/> //value is the button text
+} *@
 <h1>Clients</h1>
 @if (@Model.Count == 0)
 {
