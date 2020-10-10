@@ -1,6 +1,6 @@
-img {
-  width: 640px;
-  margin: 20px;
+img.hero {
+  width: 100%;
+  margin: 0px;
   border: 10px solid gray;
   border-radius: 10px;
 }
@@ -79,6 +79,9 @@ li#footerLi {
   color: white;
   font-size: 16px;
   margin-left: 11%;
+}
+div.spacer {
+  height: 10px;
 }
 
 #Name {
