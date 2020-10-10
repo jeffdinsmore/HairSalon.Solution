@@ -12,7 +12,7 @@ _Eau Claire's Hair Salon Database is C#/CSHTML website that allows Eau Claire to
 * _Clone this repository._
 * _Open repository in your preferred code builder program. (This was built in VS Code)_
 
-## MySQL WorkBench Schema Setup:
+### MySQL WorkBench Schema Setup:
 1. Open [MySql Workbench](https://www.mysql.com/products/workbench/) and connect to Local instance
 2. Create a new sql tab by clicking the upper left icon: 'Create A New SQL Tab for Executing Queries'
 3. Copy the following code from the sql file in the root directory of this project
@@ -20,7 +20,7 @@ _Eau Claire's Hair Salon Database is C#/CSHTML website that allows Eau Claire to
 5. Refresh your schemas and the database is ready to use.
 ---
 
-## Website Setup:
+### Website Setup:
 * _Check both of the .csproj files to ensure the proper framework under the "PropertyGroup" and "TargetFramework". I am using netcoreapp2.2. Your version may be newer_
 * _If the framework does not match above, update the version of your netcoreapp by changing the numbers. For example if you are using netcoreapp 3.1, change netcoreapp2.2 to netcoreapp3.1_
 * _In the terminal, cd into the HairSalon folder_
@@ -52,6 +52,6 @@ _Any known issues, please reach out to Jeff Dinsmore by email at hello@jeffdinsm
 
 ## License
 
-Copyright (c) 2020, **_Jeff Dinsmore_**_
+Copyright (c) 2020, **_Jeff Dinsmore_**
 
 This software is licensed under the MIT license.
