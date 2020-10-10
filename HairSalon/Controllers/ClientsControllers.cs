@@ -74,7 +74,7 @@ namespace HairSalon.Controllers
     [HttpPost] //client search bar functionality
     public ActionResult Index(string name)
     {
-      List<Client> model = _db.Clients.Where(x => x.Name.Contains(name)).ToList();      
+      List<Client> model = _db.Clients.Include(clients => clients.Stylist).Where(x => x.Name.Contains(name)).ToList();      
       List<Client> SortedList = model.OrderBy(o => o.Name).ToList();
       return View("Index", SortedList);
     }
