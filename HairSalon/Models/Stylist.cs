@@ -14,6 +14,5 @@ namespace HairSalon.Models
     public string ExpertiseNotes { get; set; }
     public string HireDate { get; set; }
     public virtual ICollection<Client> Clients { get; set; }
-
   }
 }

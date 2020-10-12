@@ -17,7 +17,6 @@ namespace HairSalon
           .AddJsonFile("appsettings.json");
       Configuration = builder.Build();
     }
-
     public IConfigurationRoot Configuration { get; set; }
 
     public void ConfigureServices(IServiceCollection services)
@@ -27,7 +26,6 @@ namespace HairSalon
         .AddDbContext<HairSalonContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
-
     public void Configure(IApplicationBuilder app)
     {
       app.UseDeveloperExceptionPage();
@@ -44,7 +42,6 @@ namespace HairSalon
       {
         await context.Response.WriteAsync("Something went wrong!");
       });
-
     }
   }
 }

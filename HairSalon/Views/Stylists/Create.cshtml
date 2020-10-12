@@ -9,23 +9,23 @@
 @using (Html.BeginForm())
 {
   <h5>Enter the stylist's information below:</h5>
-    @Html.LabelFor(model => model.Name, "Full Name:")
-    @Html.TextBoxFor(model => model.Name, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
-    @Html.TextBoxFor(model => model.PhoneNumber, 
-    new {@required="required", style="margin-left: 16px"})
-    <br>
-    @Html.LabelFor(model => model.ExpertiseNotes, "Expertise:")
-    @Html.TextBoxFor(model => model.ExpertiseNotes, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.HireDate, "Hire Date")
-    @Html.TextBoxFor(model => model.HireDate, 
-    new {@required="required"})
-    <br><br>
-    <input type="submit" value="Add New Stylist" class="btn btn-success btn-sm"/>
-    <br><br>
+  @Html.LabelFor(model => model.Name, "Full Name:")
+  @Html.TextBoxFor(model => model.Name, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
+  @Html.TextBoxFor(model => model.PhoneNumber, 
+  new {@required="required", style="margin-left: 16px"})
+  <br>
+  @Html.LabelFor(model => model.ExpertiseNotes, "Expertise:")
+  @Html.TextBoxFor(model => model.ExpertiseNotes, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.HireDate, "Hire Date")
+  @Html.TextBoxFor(model => model.HireDate, 
+  new {@required="required"})
+  <br><br>
+  <input type="submit" value="Add New Stylist" class="btn btn-success btn-sm"/>
+  <br><br>
 }
 <p>@Html.ActionLink("Cancel", "Index", null, null, new { @class = "btn btn-info btn-sm" })</p>

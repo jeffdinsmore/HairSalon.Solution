@@ -7,25 +7,25 @@
 <h4>Edit this stylist: @Html.DisplayFor(model => model.Name)</h4>
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.StylistId)
+  @Html.HiddenFor(model => model.StylistId)
 
-    @Html.LabelFor(model => model.Name, "Full Name:")
-    @Html.TextBoxFor(model => model.Name, 
-    new {@required="required"});
-    <br>
-    @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
-    @Html.TextBoxFor(model => model.PhoneNumber, 
-    new {@required="required"});
-    <br>
-    @Html.LabelFor(model => model.ExpertiseNotes, "Expertise:")
-    @Html.TextBoxFor(model => model.ExpertiseNotes, 
-    new {@required="required"});
-    <br>
-    @Html.LabelFor(model => model.HireDate, "Hire Date:")
-    @Html.TextBoxFor(model => model.HireDate, 
-    new {@required="required"});
-    <br><br>
-    <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
+  @Html.LabelFor(model => model.Name, "Full Name:")
+  @Html.TextBoxFor(model => model.Name, 
+  new {@required="required"});
+  <br>
+  @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
+  @Html.TextBoxFor(model => model.PhoneNumber, 
+  new {@required="required"});
+  <br>
+  @Html.LabelFor(model => model.ExpertiseNotes, "Expertise:")
+  @Html.TextBoxFor(model => model.ExpertiseNotes, 
+  new {@required="required"});
+  <br>
+  @Html.LabelFor(model => model.HireDate, "Hire Date:")
+  @Html.TextBoxFor(model => model.HireDate, 
+  new {@required="required"});
+  <br><br>
+  <input type="submit" value="Save" class="btn btn-primary btn-sm"/>
 }
 <br>
 <p>@Html.ActionLink("Cancel", "Details", null, new {id = Model.StylistId}, new { @class = "btn btn-info btn-sm" })</p>

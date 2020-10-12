@@ -6,32 +6,32 @@
 <h2>Edit</h2>
 <h4>Edit this client: @Html.DisplayFor(model => model.Name)</h4>
 @using (Html.BeginForm()){
-    @Html.HiddenFor(model => model.ClientId)
+  @Html.HiddenFor(model => model.ClientId)
 
-    @Html.LabelFor(model => model.Name, "Full Name:")
-    @Html.TextBoxFor(model => model.Name, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
-    @Html.TextBoxFor(model => model.PhoneNumber, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.Address, "Address:")
-    @Html.TextBoxFor(model => model.Address, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.Email, "Email:")
-    @Html.TextBoxFor(model => model.Email, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.StylingNotes, "Styling:")
-    @Html.TextBoxFor(model => model.StylingNotes, 
-    new {@required="required"})
-    <br>
-    @Html.LabelFor(model => model.Stylist)
-    @Html.DropDownList("StylistId", null, "Please Select", htmlAttributes: new{required = "Please select a stylist"})    
-    <br><br>
-    <input class="btn btn-primary btn-sm" style="width: 80px" type="submit" value="Save" />    
+  @Html.LabelFor(model => model.Name, "Full Name:")
+  @Html.TextBoxFor(model => model.Name, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.PhoneNumber, "Phone #:")
+  @Html.TextBoxFor(model => model.PhoneNumber, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.Address, "Address:")
+  @Html.TextBoxFor(model => model.Address, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.Email, "Email:")
+  @Html.TextBoxFor(model => model.Email, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.StylingNotes, "Styling:")
+  @Html.TextBoxFor(model => model.StylingNotes, 
+  new {@required="required"})
+  <br>
+  @Html.LabelFor(model => model.Stylist)
+  @Html.DropDownList("StylistId", null, "Please Select", htmlAttributes: new{required = "Please select a stylist"})    
+  <br><br>
+  <input class="btn btn-primary btn-sm" style="width: 80px" type="submit" value="Save" />    
 }
 <br>
 <p>@Html.ActionLink("Cancel", "Details", null, new{id = Model.ClientId}, new { @class = "btn btn-info btn-sm" })</p>
