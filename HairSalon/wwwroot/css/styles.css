@@ -1,11 +1,14 @@
 img.hero {
   width: 100%;
   margin: 0px;
-  border: 10px solid gray;
+  border: 6px solid gray;
   border-radius: 10px;
 }
 li {
   list-style-type: none;
+}
+div.jumbotron {
+  background-color: rgb(186, 224, 213)
 }
 div#header {
   height: 70px;
